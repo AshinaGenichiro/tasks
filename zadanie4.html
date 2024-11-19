@@ -11,8 +11,22 @@
   let thirdNumber = parseFloat(prompt("Podaj trzecia liczbe "));
   let fourthNumber = parseFloat(prompt("Podaj czwartą liczbe"));
   let fifthNumber = parseFloat(prompt("Podaj piąta liczbe"));
+  let biggest = firstNumber;
 
-  alert(Math.max(firstNumber,secondNumber,thirdNumber,fourthNumber,fifthNumber));
+  if(secondNumber > biggest){
+    biggest = secondNumber;
+  }
+  if(thirdNumber > biggest){
+    biggest = thirdNumber
+  }
+  if(fourthNumber > biggest){
+    biggest = fourthNumber
+  }
+  if(fifthNumber > biggest){
+    biggest = fifthNumber
+  }
+  alert(`Najwieksza liczba jest ${biggest}`);
+
 </script>
 </body>
 </html>
